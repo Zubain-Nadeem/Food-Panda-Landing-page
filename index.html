@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind-Pratice</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="flex items-center bg-[#E21B70] h-[60px] w-[100%] justify-center gap-7 ">
+                <img src="images/ic-rider-icon.svg" alt="Shopping bag" class="h-[45px]">
+                <h2 class="text-white text-xl font-bold">Do you need a business account?</h2>
+                <button
+                    class="border-1 border-white p-2 rounded-md text-white text-sm font-semibold hover:bg-[#F0F2F2] hover:text-black">SIGN
+                    UP NOW</button>
+            </div>
+        </section>
+
+        <section class="flex h-[60px] w-[100%] shadow-lg items-center justify-between">
+            <div class="flex items-center w-[20%] justify-center gap-1 text-[#E21B70] text-xl font-semibold">
+                <img src="images/logo.png" alt="food-panda-logo" class="h-[35px]">
+                <span><a href="#">foodpanda</a></span>
+            </div>
+
+            <div class="flex items-center w-[30%] justify-evenly">
+                <button
+                    class="border-1 border-black py-1 px-4 rounded-lg text-md font-semibold transition-[1s] hover:bg-[#F0F2F2] hover:scale-[1.1]">Log
+                    in</button>
+                <button
+                    class="border-none py-1 px-4 bg-[#E21B70] text-white rounded-lg text-md font-semibold transition-[1s] hover:bg-[#F0F2F2] hover:scale-[1.1] hover:text-black">Sign
+                    up</button>
+                <select class="border-none">
+                    <option value="English">EN</option>
+                    <option value="Urdu">URDu</option>
+                </select>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-[#F7F7F7] w-[100%] h-[100vh] flex justify-center items-center">
+            <div class=" w-[45%] h-[300px]">
+                <h1 class="text-4xl font-bold">Enjoy discounts on your first order</h1>
+
+                <div class="w-[100%] h-[60px] bg-white pl-2 rounded-lg mt-4 flex items-center gap-3  ">
+                    <input type="text" placeholder="Enter your street and portal code"
+                        class="border-2 border-[#F0F2F2] rounded-md pl-3 h-[40px] w-[80%] items-center">
+                    <button
+                        class="border-none py-2 px-4 bg-[#E21B70] text-white rounded-lg text-md font-semibold transition-[1s]  hover:scale-[1.1] ">Find
+                        food</button>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section -->
+
+        <!-- section no1  -->
+
+        <section class="h-[650px]">
+            <div class=" p-6">
+                <h2 class="text-3xl font-bold">You prepare the food, we handle the rest</h2>
+            </div>
+            <div class=" h-[430px] w-[full]">
+                <img src="images/home-vendor-pk.jpg" alt="Person cook " class="w-full h-full object-cover">
+            </div>
+
+            <div
+                class=" h-[300px] w-[50%] p-6 leading-8 shadow-xl bg-white rounded-lg absolute bottom-[-700px] left-[100px] ">
+                <h2 class="text-2xl font-semibold">List your restaurant or shop on foodpanda</h2>
+                <div class="p-2 font-semibold">
+                    <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+                    </p>
+                    <p>It's simple: we list your menu and product lists online, help you process orders, pick them up,
+                        and deliver them to hungry pandas – in a heartbeat!</p>
+                    <p>Interested? Let's start our partnership today!</p>
+                </div>
+                <button
+                    class="border-none py-2 px-4 bg-[#E21B70] text-white rounded-lg text-md font-semibold transition-[1s]  hover:scale-[1.1] ">Get
+                    started</button>
+            </div>
+        </section>
+        <!-- section no1  -->
+
+        <!-- secton no 2 -->
+        <section class=" p-2">
+            <div class=" p-4 ">
+                <h2 class="text-3xl font-bold  pl-4">Find us in these cities and many more!</h2>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-2">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Islamabad.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Islamabad</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Karachi.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Karachi</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Lahore.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Lahore</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Faisalabad.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Faisalabad</button>
+                </div>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Rawalpindi.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Rawalpindi</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Abottabad.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Abottabad</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-DeraGhaziKhan.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">DeraGhaziKhan</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Bahawalpur.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Bahawalpur</button>
+                </div>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Gujranwala.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Gujranwala</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Gujrat.jpg.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Gujrat</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Jhelum.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Jhelum</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Hyderabad.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Hyderabad</button>
+                </div>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Kamoke.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Kamoke</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Okara.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Okara</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Mardan.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Mardan</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Mangla.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Mangla</button>
+                </div>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Multan.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Multan</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Murree.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Murree</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Larkana.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Larkana</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-PanoAqil.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">PanoAqil</button>
+                </div>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Peshawar.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Peshawar</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Quetta.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Quetta</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-RahimYarKhan.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Rahim
+                        Yar Khan</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Sadiqabad.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Sadiqabad</button>
+                </div>
+            </div>
+
+            <div class="flex justify-evenly hover:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Sialkot.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Sialkot</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Sheikhupura.jpg.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Sheikhupura</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Sargodha.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Sargodha</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-Sahiwal.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">Sahiwal</button>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-10 w-[100%]:cursor-pointer pt-5">
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/Sukkur.webp)] bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer ">Sukkur</button>
+                </div>
+                <div
+                    class=" w-[22%] h-[250px] rounded-xl bg-[url(/images/city-tile-WahhCannt.webp)]  bg-cover hover:scale-[1.1]  transition-[1s]">
+                    <button
+                        class="border-none py-3 px-5 bg-[#ffffff] text-black rounded-lg text-lg font-semibold relative left-[10px] top-[185px] cursor-pointer">WahhCannt</button>
+                </div>
+            </div>
+        </section>
+        <!-- secton no 2 -->
+
+        <!-- Section no 3 -->
+        <section class="p-10 mt-2">
+            <div>
+                <h2 class="text-4xl font-bold">Put us in your pocket</h2>
+            </div>
+
+            <div class="w-[full] h-[300px] p-2 mt-2 bg-[#E21B70] rounded-xl flex justify-between">
+                <div class="w-[40%] h-[270px]">
+                    <h2 class="text-2xl font-semibold text-white p-2">Download the food and groceries you love</h2>
+
+                    <div class="flex w-full gap-3 p-4">
+                        <div class=" w-[18%] h-[90px] border border-white rounded-xl flex justify-center items-center">
+                            <img src="images/QR.png" alt="QR code image" class=" h-[80px]">
+                        </div>
+
+                        <div class=" w-[60%] text-white">
+                            <p>It's all at your fingertips – the restaurants and shops you love. Find the right food and
+                                groceries to suit your mood, and make the first bite last. Go ahead, download us.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="images/mobile.webp" alt="Mobile image" class="h-[500px] relative top-[-100px]">
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Section no 3 -->
+
+        <!-- Section no 4 -->
+        <section class=" h-[700px]">
+            <div class=" w-[full] ">
+                <h2 class="text-3xl font-bold p-6">Take your office out to lunch</h2>
+
+                <div class="w-full h-[460px]">
+                    <img src="images/section-4-image.webp" alt="section no 4 image "
+                        class="w-full h-full object-cover ">
+                </div>
+
+                <div class=" h-[250px] w-[42%] p-2 shadow-xl bg-white rounded-xl absolute left-[100px] top-[629%] ">
+                    <h2 class="text-2xl p-4 font-semibold  p-2">foodpanda for business</h2>
+                    <div class=" p-4 font-semibold ">
+                        <p>Order lunch or fuel for work-from-home, late nights in the office, corporate events, client
+                            meetings, and much more.</p>
+                    </div>
+                    <div class=" p-4">
+                        <button
+                            class="border-none py-2 px-4 bg-[#E21B70] text-white rounded-lg text-md font-semibold transition-[1s]  hover:scale-[1.1] ">Get
+                            started</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section no 4 -->
+
+
+        <!-- Section no 5  -->
+
+        <section>
+            <div class="w-[full] py-8 px-19">
+                <div class="py-3">
+                    <h2 class="text-[34px] py-2  font-bold">Order food and groceries online from the best restaurants
+                        and
+                        shops on foodpanda</h2>
+                    <p class="text-slate-600 text-base pt-2">Are you hungry? Did you have a long and stressful day?
+                        Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly
+                        shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long and
+                        detailed list of the best restaurants and shops near you to help make your every day easier.</p>
+                </div>
+
+                <div class="py-3">
+                    <h2 class="text-3xl py-2 font-bold">What's new?</h2>
+                    <ul class="pt-2">
+                        <li class="text-slate-600 text-base ">✓ Wide variety of restaurants and shops, an abundance of
+                            cuisines & products.</li>
+                        <li class="text-slate-600 text-base "> ✓ High quality delivery service.</li>
+                        <li class="text-slate-600 text-base ">✓ Live chat feature to give App users instant help when
+                            they need it.</li>
+                        <li class="text-slate-600 text-base ">✓ NEW: foodpanda grocery delivery! Discover the best
+                            shops, pharmacies, bakeries and more
+                            near you.</li>
+                    </ul>
+                </div>
+                <hr class="text-slate-300">
+
+                <div class="py-3">
+                    <h2 class="text-2xl font-bold">Frequently Asked Questions</h2>
+                    <h2 class="text-xl py-3 font-bold">How can I get foodpanda delivery?</h2>
+                    <p class="text-slate-600 text-base pt-2">To get foodpanda delivery, simply locate the restaurants
+                        and shops near you by typing in your address, browse through a variety of restaurants and
+                        cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only
+                        need to checkout and make the payment. Soon your delicious food will arrive at your doorstep!
+                    </p>
+
+
+                    <h2 class="text-xl pt-5 font-bold">Which takeout restaurants open now near me?</h2>
+                    <p class="text-slate-600 text-base pt-3">You can check which takeout restaurants are open now near
+                        you by simply typing your address in the location bar on foodpanda and pressing search. You will
+                        see all the available restaurants and shops that deliver to your area.</p>
+
+
+                    <h2 class="text-xl pt-5 font-bold">Does foodpanda deliver 24 hours?</h2>
+                    <p class="text-slate-600 text-base pt-3">Yes, foodpanda in Pakistan delivers 24 hours. However, many
+                        restaurants may be unavailable for a late-night delivery. Please check which places in Pakistan
+                        deliver to you within 24 hours by using your address. You can also order groceries 24 hours a
+                        day via pandamart.</p>
+
+
+                    <h2 class="text-xl pt-5 font-bold">Can you pay cash for foodpanda?</h2>
+                    <p class="text-slate-600 text-base pt-3">Yes, you can pay cash on delivery for foodpanda in
+                        Pakistan..</p>
+
+
+                    <h2 class="text-xl pt-5 font-bold">How can I pay foodpanda online?</h2>
+                    <p class="text-slate-600 text-base pt-3">You can pay online while ordering at foodpanda Pakistan by
+                        using a credit or debit card or PayPal.</p>
+
+                    <h2 class="text-xl pt-5 font-bold">Can I order foodpanda for someone else?</h2>
+                    <p class="text-slate-600 text-base pt-3">Yes, foodpanda Pakistan allows you to place an order for
+                        someone else. During checkout, just update the name and delivery address of the person you're
+                        ordering for. Please keep in mind that if the delivery details are not correct and the order
+                        cannot be delivered, we won't be able to process a refund..</p>
+
+                    <h2 class="text-xl pt-5 font-bold">How much does foodpanda charge for delivery?</h2>
+                    <p class="text-slate-600 text-base pt-3">Delivery fee charged by foodpanda in Pakistan depends on
+                        many operational factors, most of all - location and the restaurant you are ordering from. You
+                        can always check the delivery fee while forming your order. Besides, you can filter the
+                        restaurants by clicking on the "Free Delivery" icon at the top of your restaurant listing.</p>
+
+
+                    <h2 class="text-xl pt-5 font-bold">What restaurants let you order online?</h2>
+                    <p class="text-slate-600 text-base pt-3">There are hundreds of restaurants on foodpanda Pakistan
+                        that let you order online. For example, <a class="text-[#E21B70] font-semibold underline "
+                            href="#">KFC</a>, <a class="text-[#E21B70] font-semibold underline " href="#">
+                            McDonald's</a>, <a class="text-[#E21B70] font-semibold underline " href="#">Pizza Hut</a>,
+                        <a class="text-[#E21B70] font-semibold underline " href="#"> OPTP</a>, <a
+                            class="text-[#E21B70] font-semibold underline " href="#">Hardee's</a> , <a
+                            class="text-[#E21B70] font-semibold underline " href="#"> Domino's</a>, <a
+                            class="text-[#E21B70] font-semibold underline " href="#">Kababjees</a> and many-many more!
+                        In order to check all the restaurants near you that deliver, just type in your address and
+                        discover all the available places.
+                    </p>
+
+                    <h2 class="text-xl pt-5 font-bold">Does foodpanda have minimum order?</h2>
+                    <p class="text-slate-600 text-base pt-3">Yes, many restaurants have a minimum order. The minimum
+                        order value depends on the restaurant you order from and is indicated during your ordering
+                        process.
+                    </p>
+
+                    <h2 class="text-xl pt-5 font-bold">What is the difference between delivery and Pick-Up?</h2>
+                    <p class="text-slate-600 text-base pt-3">If you choose delivery, a foodpanda rider will collect your
+                        order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up,
+                        you can takeaway your food directly from the restaurant for extra savings – and to jump to the
+                        front of the queue. Pick-Up orders are available for restaurants only.
+                    </p>
+
+                    <h2 class="text-base font-semibold pt-5">Order food and groceries online with foodpanda now and
+                        enjoy a great dining experience!</h2>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section no 5  -->
+    </main>
+
+
+    <footer>
+        <section class=" p-10 h-[550px]">
+        <hr class="text-slate-300">
+        
+        <div class=" flex justify-evenly leading-12 font-semibold text-slate-600">
+            
+            <div>
+                <span><a href="#">© foodpanda</a></span>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#" class=" hover:underline">Press</a></li>
+                    <li><a href="#" class=" hover:underline">pandapay Terms and Conditions</a></li>
+                    <li><a href="#" class=" hover:underline">Security</a></li>
+                    <li><a href="#" class=" hover:underline">Careers</a></li>
+                    <li><a href="#" class=" hover:underline">Cashback Terms and Conditions</a></li>
+                    <li><a href="#" class=" hover:underline">Partner with Us</a></li>
+                    <li><a href="#" class=" hover:underline">pandapro - Monthly Subscription Programme</a></li>
+                    <li><a href="#" class=" hover:underline">Ramzan deals</a></li>
+                    <li><a href="#" class=" hover:underline">Areas delivered in Lahore</a></li>
+
+                </ul>
+            </div>
+
+
+            <div>
+                <ul>
+                    <li><a href="#" class="hover:underline">Help Center</a></li>
+                    <li><a href="#" class="hover:underline">Terms and Conditions</a></li>
+                    <li><a href="#" class="hover:underline">Download foodpanda Apps</a></li>
+                    <li><a href="#" class="hover:underline"> Suggest a Restaurant</a></li>
+                    <li><a href="#" class="hover:underline"> All cuisines</a></li>
+                    <li><a href="#" class="hover:underline"> pandago - Request a Rider</a></li>
+                    <li><a href="#" class="hover:underline">Update on COVID-19 in Pakistan</a></li>
+                    <li><a href="#" class="hover:underline">foodpanda Home Chef</a></li>
+                    <li><a href="#" class="hover:underline">Areas delivered in Karachi</a></li>
+                    <li><a href="#" class="hover:underline">Areas delivered in Islamabad</a></li>
+
+                </ul>
+            </div>
+
+
+            <div>
+                <ul>
+                    <li><a href="#" class="hover:underline">Refunds with pandapay</a></li>
+                    <li><a href="#" class="hover:underline"> Privacy policy</a></li>
+                    <li><a href="#" class="hover:underline"> Human rights policy</a></li>
+                    <li><a href="#" class="hover:underline"> Corporate Customer</a></li>
+                    <li><a href="#" class="hover:underline"></a></li>foodpanda Magazine
+                    <li><a href="#" class="hover:underline"> foodpanda Vouchers & Coupons</a></li>
+                    <li><a href="#" class="hover:underline">pandamart Grocery Delivery</a></li>
+                    <li><a href="#" class="hover:underline"> Become an Affiliate</a></li>
+                    <li><a href="#" class="hover:underline"> Areas delivered in Gujranwala</a></li>
+                    <li><a href="#" class="hover:underline"> Areas delivered in Peshawar</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="text-slate-300">
+    </section>
+
+    <div class="px-10 flex justify-between">
+        <div class="flex items-center gap-1  text-[#E21B70] text-xl font-semibold">
+            <img src="images/logo.png" alt="food-panda-logo" class="h-[35px]">
+            <span><a href="#">foodpanda</a></span>
+        </div>
+
+        <div class="flex items-center">
+            <img src="images/facebook.png" alt="facebook image" class="h-[40px]">
+            <img src="images/instagram.png" alt="instagram image" class="h-[50px]">
+        </div>
+    </div>
+    </footer>
+</body>
+
+</html>
